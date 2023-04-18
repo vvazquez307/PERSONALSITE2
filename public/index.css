@@ -1,13 +1,71 @@
-body {
-    margin: 0;
+html {
+  height: 100%;
+  background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
 }
-
+body {
+  margin: 0;
+  height: 100%;
+}
+#app {
+  height: 100%;
+}
+#page-container {
+  height: fit-content;
+  position: relative;
+  min-height: 100%;
+}
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
 #navbar {
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    max-height: 10%;
-    min-height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-height: 10%;
+  min-height: 40px;
+}
+#footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  max-height: 10%;
+  min-height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#home {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about-text-box {
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+}
+#about-title {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 175px;
+}
+#img-container {
+  display: flex;
+  justify-content: center;
+}
+.home_images {
+  height: 200px;
+  width: 250px;
 }
