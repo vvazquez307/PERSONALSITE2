@@ -1,15 +1,18 @@
 import React from "react";
-import { Navbar, Home } from "./";
+import { Navbar, Home, Footer } from "./";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const Main = () => {
   return (
-    <div id="main">
+    <div id="page-container">
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <div id="content-wrap">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );
