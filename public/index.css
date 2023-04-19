@@ -2,6 +2,12 @@ html {
   height: 100%;
   background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
 }
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
 body {
   margin: 0;
   height: 100%;
@@ -130,4 +136,11 @@ body {
 .home_images {
   height: 200px;
   width: 250px;
+}
+.text-link {
+  color: white;
+  text-decoration: none;
+}
+.text-link:hover {
+  color: red;
 }
