@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Home, Footer } from "./";
+import { Navbar, Home, Footer, Contact } from "./";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const Main = () => {
@@ -10,6 +10,7 @@ const Main = () => {
         <div id="content-wrap">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/contact-info" element={<Contact />} />
           </Routes>
         </div>
         <Footer />

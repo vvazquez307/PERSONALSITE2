@@ -22,11 +22,13 @@ const Navbar = () => {
   return (
     <div id="navbar">
       <div>
-        <img
-          id="navbar-img"
-          src="./images/navbar/AC-img.png"
-          alt="nice looking image"
-        />
+        <Link to="/">
+          <img
+            id="navbar-img"
+            src="./images/navbar/AC-img.png"
+            alt="nice looking image"
+          />
+        </Link>
       </div>
       <div id="navbar-title">
         <h2>Victor Vazquez's Personal Site</h2>
@@ -39,13 +41,13 @@ const Navbar = () => {
             }}
             className="dropbtn"
           >
-            Dropdown
+            More
           </button>
           <div id="myDropdown" className="dropdown-content">
             <Link to="https://www.youtube.com/" target="_blank">
               Projects
             </Link>
-            <Link>Contact Me!</Link>
+            <Link to="/contact-info">Contact Me!</Link>
             <Link>Link 3</Link>
           </div>
         </div>
