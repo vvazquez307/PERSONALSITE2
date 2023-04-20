@@ -2,6 +2,9 @@ html {
   height: 100%;
   background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
 }
+p {
+  color: white;
+}
 h1 {
   color: white;
 }
@@ -37,12 +40,15 @@ body {
   height: 54px;
   width: 42px;
 }
+#navbar-title {
+  font-size: 35px;
+}
 /* Navbar dropdown menu css */
 .dropbtn {
   background-color: black;
   color: white;
   padding: 5px;
-  font-size: 16px;
+  font-size: 25px;
   border: 1px solid white;
   cursor: pointer;
   width: 85px;
@@ -60,12 +66,13 @@ body {
   display: none;
   position: absolute;
   background-color: black;
-  min-width: 125px;
+  min-width: 135px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 .dropdown-content a {
   color: white;
+  font-size: 20px;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -79,8 +86,8 @@ body {
 /* Navbar dropdown menu css */
 .footer-img {
   border: 1.5px solid transparent;
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
 }
 .footer-img:hover {
   border: 1.5px solid red;
@@ -122,20 +129,22 @@ body {
   margin-right: 150px;
   text-align: center;
   padding-bottom: 50px;
+  font-size: xx-large;
 }
 #about-title {
   display: flex;
   justify-content: center;
-  height: 40px;
-  width: 175px;
+  /* height: 40px;
+  width: 175px; */
+  font-size: 400%;
 }
 #img-container {
   display: flex;
   justify-content: space-evenly;
 }
 .home_images {
-  height: 200px;
-  width: 250px;
+  height: 350px;
+  width: 400px;
 }
 .text-link {
   color: white;
@@ -143,4 +152,31 @@ body {
 }
 .text-link:hover {
   color: red;
+}
+#contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10%;
+  font-size: 125%;
+  padding: 25px;
+  margin-top: 15%;
+}
+#content-wrap {
+  display: flex;
+  justify-content: center;
+}
+#contact-back-btn {
+  height: 30px;
+  background-color: rgb(0, 0, 0, 0.5);
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+}
+#contact-back-btn:hover {
+  color: red;
+  border: 1px solid red;
+  cursor: pointer;
 }

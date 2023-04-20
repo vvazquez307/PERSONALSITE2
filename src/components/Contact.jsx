@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
+  function navigateHome() {
+    navigate("/");
+  }
   return (
-    <div>
+    <div id="contact-content">
       <div id="contact-title">
         <h1>Contact Information</h1>
       </div>
@@ -30,10 +35,15 @@ const Contact = () => {
             Click Here!
           </Link>
         </h2>
-        <button>
-          <Link to="/">Go back</Link>
-        </button>
       </div>
+      <button
+        id="contact-back-btn"
+        onClick={() => {
+          navigateHome();
+        }}
+      >
+        Go to Home
+      </button>
     </div>
   );
 };

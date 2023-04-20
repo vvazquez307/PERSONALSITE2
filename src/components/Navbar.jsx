@@ -30,8 +30,8 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      <div id="navbar-title">
-        <h2>Victor Vazquez's Personal Site</h2>
+      <div>
+        <h2 id="navbar-title">Victor Vazquez's Personal Site</h2>
       </div>
       <div id="navbar-DM">
         <div className="dropdown">
