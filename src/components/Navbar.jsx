@@ -44,11 +44,11 @@ const Navbar = () => {
             More
           </button>
           <div id="myDropdown" className="dropdown-content">
-            <Link to="https://www.youtube.com/" target="_blank">
-              Projects
-            </Link>
+            <Link to="/projects">Projects</Link>
             <Link to="/contact-info">Contact Me!</Link>
-            <Link>Link 3</Link>
+            <Link to="https://www.youtube.com/" target="_blank">
+              Link 3
+            </Link>
           </div>
         </div>
       </div>
