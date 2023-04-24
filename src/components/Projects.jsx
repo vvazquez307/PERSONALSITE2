@@ -1,13 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Projects = () => {
+  const navigate = useNavigate();
+  function navigateHome() {
+    navigate("/");
+  }
   return (
     <div id="projects-container">
       <div id="project1">
         <h1 id="project-title">DriveZe!</h1>
         <p>
-          <Link className="text-link" to="https://driveze.netlify.app/">
+          <Link
+            className="text-link"
+            to="https://driveze.netlify.app/"
+            target="_blank"
+          >
             https://driveze.netlify.app/
           </Link>
         </p>
