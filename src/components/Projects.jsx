@@ -6,6 +6,10 @@ const Projects = () => {
   function navigateHome() {
     navigate("/");
   }
+
+  function HideProject1() {
+    document.getElementById("project1").style.display = "none";
+  }
   return (
     <div id="projects-container">
       <div id="project1">
@@ -55,15 +59,44 @@ const Projects = () => {
             DriveZe-Frontend: https://github.com/vvazquez307/DrivEze
           </Link>
         </p>
+        <div id="projectButtonsContainer">
+          {/* <button
+            onClick={() => {
+              HideProject1();
+            }}
+          >
+            HideProject1
+          </button> */}
+          <button
+            id="project-back-btn"
+            onClick={() => {
+              navigateHome();
+            }}
+          >
+            Go to Home
+          </button>
+        </div>
       </div>
-      <button
-        id="project-back-btn"
-        onClick={() => {
-          navigateHome();
-        }}
-      >
-        Go to Home
-      </button>
+      {/* <div id="project2">
+        <h1>Hello World!</h1>
+        <div id="projectButtonsContainer">
+          <button
+            onClick={() => {
+              HideProject1();
+            }}
+          >
+            HideProject1
+          </button>
+          <button
+            id="project-back-btn"
+            onClick={() => {
+              navigateHome();
+            }}
+          >
+            Go to Home
+          </button>
+        </div>
+      </div> */}
     </div>
   );
 };
